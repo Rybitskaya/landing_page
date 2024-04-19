@@ -3,5 +3,12 @@ module.exports = {
   plugins: [
     "stylelint-scss"
   ],
-  rules: {}
+  rules: {
+    "scss/at-mixin-pattern": [
+      "^[a-z][a-zA-Z0-9]*$",
+      {
+        "message": "Class names should be in camelCase"
+      }
+    ]
+  }
 };
