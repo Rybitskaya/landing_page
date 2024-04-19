@@ -1,0 +1,57 @@
+.now {
+  &__wrapper {
+    margin-top: 48px;
+    gap: 48px;
+    display: grid;
+
+    @include onTablet {
+      margin-top: 88px;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    line-height: 27px;
+
+    @include onTablet {
+      width: 392px;
+      margin: 8px auto 0;
+    }
+  }
+
+  &__button {
+    margin-top: 40px;
+    height: 56px;
+    width: 280px;
+    background-color: #d12d35;
+    border: 1px solid #d12d35;
+    font-size: 16px;
+    text-align: center;
+    line-height: 27px;
+    font-family: Cinzel, serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+
+    @include onTablet {
+      width: 392px;
+      margin: 40px auto 0;
+    }
+
+    @include onDesktop {
+      width: 324px;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: #d12d35;
+    }
+  }
+}

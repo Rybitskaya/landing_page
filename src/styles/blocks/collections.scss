@@ -1,0 +1,33 @@
+@import '../utilus/mixins';
+
+.collections {
+  display: flex;
+  flex-direction: column;
+
+  @include onTablet {
+    width: 392px;
+    margin: 0 auto;
+    row-gap: 48px;
+  }
+
+  @include onDesktop {
+    width: 100%;
+  }
+
+  &__product {
+    grid-column: 1 / -1;
+
+    @include onDesktop {
+      grid-column: span 4;
+    }
+  }
+
+  &__areas {
+    display: grid;
+    row-gap: 48px;
+
+    @include pageGrid;
+
+    margin-top: 40px;
+  }
+}

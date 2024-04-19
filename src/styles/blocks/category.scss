@@ -1,0 +1,114 @@
+.category {
+  &__photos {
+    @include pageGrid;
+
+    gap: 20px;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+
+    &--masters {
+      object-position: 30%;
+    }
+
+    &--dance {
+      object-position: 98%;
+    }
+  }
+
+  &__three-cards {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+
+    @include onTablet {
+      grid-column: span 6;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    @include onDesktop {
+      grid-column: span 12;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__link {
+    position: relative;
+
+    &--masters {
+      @include onTablet {
+        grid-column: 1 / 5;
+      }
+
+      @include onDesktop {
+        grid-column: 1 / 9;
+      }
+    }
+
+    &--square {
+      height: 0;
+      padding-bottom: 100%;
+    }
+
+    &--man {
+      @include onTablet {
+        grid-column: 5 / 7;
+      }
+
+      @include onDesktop {
+        grid-column: 9 / 13;
+      }
+    }
+
+    &--img2 {
+      @include onTablet {
+        display: none;
+      }
+
+      @include onDesktop {
+        display: block;
+      }
+    }
+
+    &--clocks {
+      @include onTablet {
+        grid-column: 1 / 3;
+      }
+
+      @include onDesktop {
+        grid-column: 1 / 5;
+      }
+    }
+
+    &--dance {
+      @include onTablet {
+        grid-column: 3 / 7;
+      }
+
+      @include onDesktop {
+        grid-column: span 8;
+      }
+    }
+  }
+
+  &__title {
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    color: #d12d35;
+  }
+
+  &__dates {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+    color: #161616;
+  }
+}

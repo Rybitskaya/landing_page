@@ -1,0 +1,157 @@
+.contact {
+  display: grid;
+
+  &__places {
+    display: grid;
+    gap: 48px;
+    margin-top: 48px;
+
+    @include onTablet {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: flex-start;
+    }
+
+    @include onDesktop {
+      grid-template-columns: repeat(12, 1fr);
+    }
+  }
+
+  &__place {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: left;
+    color: #161616;
+
+    display: grid;
+    gap: 16px;
+  }
+
+  &__boxes {
+    @include onTablet {
+      grid-column: 1 / 2;
+      display: grid;
+      gap: 48px;
+
+      @include onDesktop {
+        grid-column: 1 / 7;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  &__container {
+    @include onTablet {
+      display: grid;
+      gap: 16px;
+    }
+  }
+
+  &__subtitle {
+    color: #161616;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 27px;
+    text-align: left;
+  }
+
+  &__description {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: left;
+    color: #3e3e3e;
+  }
+
+  &__phone {
+    display: grid;
+    gap: 4px;
+  }
+
+  &__adress {
+    display: grid;
+    gap: 4px;
+  }
+
+  &__form {
+    display: grid;
+    gap: 16px;
+
+    @include onTablet {
+      grid-column: 2 / 3;
+    }
+
+    @include onDesktop {
+      grid-column: 8 / 13;
+    }
+  }
+
+  &__input {
+    font-weight: 400;
+    font-family: Cinzel, "Times New Roman", Times, serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #161616;
+
+    width: 280px;
+    height: 48px;
+    background-color: #f8f8fa;
+    border: solid 1px transparent;
+    outline: none;
+    padding: 16px 14px;
+    box-sizing: border-box;
+
+    @include onDesktop {
+      width: 411px;
+    }
+
+    &::placeholder {
+      color: #7e7e83;
+    }
+    &:hover {
+      color: #161616;
+    }
+    &:focus {
+      color: #161616;
+      border: solid 1px #161616;
+    }
+
+    &--message {
+      height: 144px;
+
+      @include onDesktop {
+        width: 411px;
+      }
+    }
+  }
+
+  &__button {
+    border: solid 1px transparent;
+    margin-top: 32px;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: #d12d35;
+    width: 280px;
+    height: 56px;
+    padding: 0;
+    font-family: Cinzel, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 27px;
+    display: block;
+
+    &:hover {
+      background-color: #ae1c23;
+    }
+    &:active {
+      background-color: #eb343d;
+    }
+
+    @include onDesktop {
+      width: 411px;
+    }
+  }
+}

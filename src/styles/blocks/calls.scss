@@ -1,0 +1,39 @@
+.calls {
+  cursor: pointer;
+  scroll-behavior: smooth;
+  font-weight: 700;
+  color: #fff;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: right;
+  display: none;
+  padding: 22px;
+  top: 0;
+
+  @include onDesktop {
+    display: inline;
+    position: absolute;
+    right: 140px;
+  }
+
+  &__container {
+    display: grid;
+    gap: 8px;
+    text-transform: uppercase;
+
+    width: 201px;
+  }
+
+  &__close {
+    background-image: url(../images/icons/phone-call-2x.png);
+    height: 32px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 32px;
+    position: absolute;
+    right: -54px;
+    top: 67px;
+
+    @include hover(transform, scale(1.2));
+  }
+}

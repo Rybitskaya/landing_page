@@ -1,0 +1,47 @@
+.page {
+  font-family: Cinzel, 'Times New Roman', Times, serif;
+  color: #161616;
+  size: 16px;
+  line-height: 27px;
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+    position: relative;
+    min-width: 320px;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    opacity: 0;
+    transition: all 0.3s;
+    transform: translateX(-100%);
+    pointer-events: none;
+
+    &:target {
+      opacity: 1;
+      transform: translateX(0);
+      pointer-events: all;
+    }
+  }
+
+  &__calls {
+    top: 24px;
+    right: 50%;
+
+    opacity: 0;
+    transition: all 0.3s;
+    transform: translateX(-100%);
+    pointer-events: none;
+
+    &:target {
+      opacity: 1;
+      transform: translateX(0);
+      pointer-events: all;
+    }
+  }
+}

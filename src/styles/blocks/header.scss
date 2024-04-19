@@ -1,0 +1,48 @@
+.header {
+  background-image: url(../images/header-bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+
+  &__content {
+    height: 100vh;
+  }
+
+  &__title {
+    color: $main-text-color;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1.5px;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 0;
+
+    @include onTablet {
+      font-size: 64px;
+      line-height: 64px;
+    }
+
+    @include onDesktop {
+      font-size: 80px;
+      line-height: 80px;
+    }
+  }
+
+  &__logo {
+    width: 64px;
+    height: 46px;
+    top: 25px;
+    left: 20px;
+
+    @include onTablet {
+      width: 87px;
+      height: 65px;
+    }
+  }
+}

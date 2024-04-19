@@ -1,0 +1,39 @@
+.menu {
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: #d12d35;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &__top {
+    margin-bottom: 0;
+  }
+
+  &__nav {
+    margin-bottom: 32px;
+  }
+
+  &__phone-number {
+    color: $main-text-color;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 16px;
+  }
+
+  &__call-to-order {
+    color: $main-text-color;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    padding-bottom: 8px;
+    width: fit-content;
+
+    &:hover {
+      border-bottom: 1px solid $main-text-color;
+    }
+  }
+}

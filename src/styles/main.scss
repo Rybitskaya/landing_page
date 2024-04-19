@@ -1,3 +1,23 @@
+@import './utilus/mixins';
+@import './utilus/variables';
+@import './reset';
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/nav';
+@import 'blocks/page';
+@import 'blocks/top-bar';
+@import 'blocks/icon';
+@import 'blocks/footer';
+@import 'blocks/section-title';
+@import 'blocks/main';
+@import 'blocks/online';
+@import 'blocks/collections';
+@import 'blocks/hours';
+@import 'blocks/now';
+@import 'blocks/category';
+@import 'blocks/contact';
+@import 'blocks/calls';
+
 body {
   margin: 0;
 }
