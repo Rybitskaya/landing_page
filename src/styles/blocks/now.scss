@@ -5,7 +5,7 @@
     display: grid;
 
     @include onTablet {
-      margin-top: 88px;
+      // margin-top: 88px;
     }
   }
 
@@ -38,6 +38,7 @@
     padding: 0;
     box-sizing: border-box;
     cursor: pointer;
+    transition: 0.3s;
     display: block;
 
     @include onTablet {
@@ -50,8 +51,14 @@
     }
 
     &:hover {
-      background-color: transparent;
-      color: #d12d35;
+      background-color: #ae1c23;
+      border: 1px solid #ae1c23;
     }
+    &:active {
+      background-color: #eb343d;
+      border: 1px solid #eb343d;
+    }
+
   }
 }
+

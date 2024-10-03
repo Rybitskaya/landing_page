@@ -33,16 +33,4 @@
       line-height: 80px;
     }
   }
-
-  &__logo {
-    width: 64px;
-    height: 46px;
-    top: 25px;
-    left: 20px;
-
-    @include onTablet {
-      width: 87px;
-      height: 65px;
-    }
-  }
 }

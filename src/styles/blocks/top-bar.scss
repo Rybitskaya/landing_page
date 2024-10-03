@@ -24,12 +24,14 @@
   }
 
   &__logo {
-    height: 64px;
+    width: 64px;
+    height: 46px;
 
     @include hover(transform, scale(1.2));
 
     @include onTablet {
-      height: 87px;
+      height: 65px;
+      width: 87px;
     }
   }
 }

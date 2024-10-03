@@ -28,10 +28,11 @@
   }
 
   &__boxes {
+    gap: 48px;
+    display: grid;
+
     @include onTablet {
       grid-column: 1 / 2;
-      display: grid;
-      gap: 48px;
 
       @include onDesktop {
         grid-column: 1 / 7;
@@ -43,9 +44,11 @@
   }
 
   &__container {
+    display: grid;
+    gap: 8px;
+
     @include onTablet {
-      display: grid;
-      gap: 16px;
+     gap: 16px;
     }
   }
 
@@ -95,23 +98,20 @@
     line-height: 20px;
     color: #161616;
 
-    width: 280px;
     height: 48px;
     background-color: #f8f8fa;
     border: solid 1px transparent;
     outline: none;
     padding: 16px 14px;
     box-sizing: border-box;
-
-    @include onDesktop {
-      width: 411px;
-    }
+    width: 100%;
 
     &::placeholder {
       color: #7e7e83;
     }
     &:hover {
       color: #161616;
+
     }
     &:focus {
       color: #161616;
@@ -128,7 +128,7 @@
   }
 
   &__button {
-    border: solid 1px transparent;
+    border: solid 1px #d12d35;
     margin-top: 32px;
     color: #fff;
     box-sizing: border-box;
@@ -145,9 +145,12 @@
 
     &:hover {
       background-color: #ae1c23;
+      border: 1px solid #ae1c23;
     }
+
     &:active {
       background-color: #eb343d;
+      border: 1px solid #eb343d;
     }
 
     @include onDesktop {

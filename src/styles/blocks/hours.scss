@@ -1,14 +1,11 @@
 .hours {
-  margin-top: 100px;
   row-gap: 32px;
-
+  
   @include pageGrid;
 
   &__section-left {
-    grid-column: span 2;
-
     @include onTablet {
-      grid-column: 1 / 4;
+    grid-column: 1 / 4;
     }
 
     @include onDesktop {
@@ -29,13 +26,11 @@
     font-size: 32px;
     line-height: 32px;
     letter-spacing: -1.5px;
-    margin: 0;
-    display: flex;
+    text-align: left;
 
     @include onTablet {
       font-size: 48px;
       line-height: 48px;
-      text-align: left;
     }
   }
 
@@ -62,7 +57,6 @@
   }
 
   &__title {
-    grid-column: 1 / -1;
     font-weight: bold;
     color: rgba(22, 22, 22, 1);
     font-size: 24px;

@@ -3,8 +3,6 @@
 
   &__photo {
     width: 100%;
-    grid-column: 1 / -1;
-    display: grid;
 
     @include onTablet {
       width: 100%;
